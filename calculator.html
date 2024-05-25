@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div id="calculator">
+    <div id="display">
+      <input type="text" id="input" readonly>
+      <input type="text" id="inputResult" readonly>
+    </div>
+    <div class="buttons">
+      <button onclick="giveValue('1')">1</button>
+      <button onclick="giveValue('2')">2</button>
+      <button onclick="giveValue('3')">3</button>
+      <button onclick="giveValue('+')" class="operator">+</button>
+      <button onclick="giveValue('4')">4</button>
+      <button onclick="giveValue('5')">5</button>
+      <button onclick="giveValue('6')">6</button>
+      <button onclick="giveValue('-')" class="operator">-</button>
+      <button onclick="giveValue('7')">7</button>
+      <button onclick="giveValue('8')">8</button>
+      <button onclick="giveValue('9')">9</button>
+      <button onclick="giveValue('*')" class="operator">×</button>
+      <button onclick="giveValue('0')">0</button>
+      <button onclick="giveValue('.')">.</button>
+      <button onclick="calculateResult()" class="equals">=</button>
+      <button onclick="giveValue('/')" class="operator">÷</button>
+      <button onclick="clearResults('C')" class="clear">C</button>
+    </div>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
